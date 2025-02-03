@@ -29,3 +29,6 @@ pip install pandas
 pip install numpy
 pip install spotipy
 ```
+
+### Project Execution Flow
+Extract Data from API -> Lambda Trigger (every 1 hour) -> Run Extract code -> Store Raw Data -> Tigger Transform Function -> Transform Data and Load -> Query using Athena
