@@ -3,6 +3,15 @@
 ### Intoduction
 In this project we build an ETL(Extract, Transform, Load) pipeline using Spotify API on AWS. The pipeline will retrieve data from Spotify API, transform it to a desired format, and load into AWS S3(Data Storage).
 
+### Project Components
+- Integrating with Spotify API and extracting Data
+- Deploying code on AWS Lambda for Data Extraction
+- Adding trigger to run the extraction automatically
+- Writing transformation function
+- Building automated trigger on transformation function
+- Store files on S3 properly
+- Building Analytics Tables on data files using Glue and Athena
+
 ### Architecture
 ![Architecture Diagram](https://github.com/LalithaSpoorthy/Spotify-end-to-end-ETL-data-engineering/blob/main/Spotify-etl-data-architecture.png)
 
@@ -32,3 +41,4 @@ pip install spotipy
 
 ### Project Execution Flow
 Extract Data from API -> Lambda Trigger (every 1 hour) -> Run Extract code -> Store Raw Data -> Tigger Transform Function -> Transform Data and Load -> Query using Athena
+
