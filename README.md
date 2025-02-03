@@ -24,8 +24,8 @@ This API contains information about music artist, albums and songs - [Spotify AP
    
 
 ### Install Packages
-...
+```
 pip install pandas
 pip install numpy
 pip install spotipy
-...
+```
